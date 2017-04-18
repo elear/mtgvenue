@@ -1187,12 +1187,14 @@
 	    tweak to that by Eliot.  IETF operates 
 	    internationally, as proposed by Brian.
 	  </t>
-	  <t hangText="2017-03-30">
+	  <t hangText="2017-04-18">
 	    Add new introductory text. Sharpen mandatory
 	    definition. Split first criteria into two, and reword them to
 	    be more actionable.  Remove net cash
 	    positive requirement.  Change many critera from Mandatory
-	    to Important.
+	    to Important.  Remove consensus text.  Modify chapeau.
+	    Add some normative MUSTs in Section 5, and restructure
+	    Section 5.5.  A bunch of other stuff as well.  Use diff.
 	  </t>
         </list>
       </t>
