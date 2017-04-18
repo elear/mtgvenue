@@ -1,6 +1,6 @@
 
-DOCS=   draft-ietf-mtgvenue-iaoc-venue-selection-process-05.txt \
-	draft-ietf-mtgvenue-iaoc-venue-selection-process-05.html
+DOCS=   draft-ietf-mtgvenue-iaoc-venue-selection-process-06.txt \
+	draft-ietf-mtgvenue-iaoc-venue-selection-process-06.html
 
 all: $(DOCS)
 
