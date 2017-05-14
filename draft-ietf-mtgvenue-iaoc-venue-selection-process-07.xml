@@ -1,0 +1,1151 @@
+<?xml version='1.0' encoding='ascii'?>
+<!DOCTYPE rfc SYSTEM "rfc2629.dtd" [
+<!ENTITY RFC2119 SYSTEM
+	 "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2119.xml">
+]>
+<?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
+<?rfc strict="yes" ?>
+<?rfc comments="no" ?>
+<?rfc inline="no" ?>
+<?rfc editing="no" ?>
+<?rfc toc="yes"?>
+<?rfc tocdepth="2"?>
+<?rfc symrefs="yes"?>
+<?rfc sortrefs="yes" ?>
+<?rfc compact="yes" ?>
+<?rfc subcompact="no" ?>
+
+
+<rfc category="bcp"
+  docName="draft-ietf-mtgvenue-iaoc-venue-selection-process-07"
+  ipr="trust200902" submissionType="IETF" updates="" xml:lang="en">
+
+  <front>
+    <title abbrev="Venue Selection">IETF Plenary Meeting Venue Selection
+      Process</title>
+
+    <author fullname="Ray Pelletier" initials="R." surname="Pelletier">
+      <organization>Internet Society</organization>
+      <address>
+        <email>rpelletier@isoc.org</email>
+      </address>
+    </author>
+
+    <author fullname="Laura Nugent" initials="L." surname="Nugent">
+      <organization>Association Management Solutions</organization>
+      <address>
+        <email>lnugent@amsl.com</email>
+      </address>
+    </author>
+
+    <author fullname="Dave Crocker" initials="D." role="editor"
+      surname="Crocker">
+      <organization>Brandenburg InternetWorking</organization>
+      <address>
+        <email>dcrocker@bbiw.net</email>
+      </address>
+    </author>
+
+    <author fullname="Lou Berger" initials="L." surname="Berger">
+      <organization>LabN Consulting, L.L.C.</organization>
+      <address>
+        <email>lberger@labn.net</email>
+      </address>
+    </author>
+
+    <author fullname="Ole Jacobsen" initials="O." surname="Jacobsen">
+      <organization>The Internet Protocol Journal</organization>
+      <address>
+        <email>olejacobsen@me.com</email>
+      </address>
+    </author>
+
+    <author fullname="Jim Martin" initials="J." surname="Martin">
+      <organization>INOC</organization>
+      <address>
+        <email>jim@inoc.com</email>
+      </address>
+    </author>
+
+    <author fullname="Fred Baker" initials="F.J." role="editor" surname="Baker">
+      <organization />
+      <address>
+        <email>FredBaker.IETF@gmail.com</email>
+      </address>
+    </author>
+    <author fullname="Eliot Lear" initials="E." role="editor" surname="Lear">
+      <organization>Cisco Systems GmbH</organization>
+      <address>
+        <email>lear@cisco.com</email>
+      </address>
+    </author>
+
+    <date />
+    <area>General</area>
+    <workgroup>mtgvenue</workgroup>
+
+    <abstract>
+      <t>The IAOC has responsibility for arranging IETF plenary meeting Venue
+        selection and operation. This document details the IETF's Meeting Venue
+        Selection Process from the perspective of its goals, criteria and
+        thought processes. It points to additional process documents on the IAOC
+        Web Site that go into further detail and are subject to change with
+        experience.</t>
+    </abstract>
+
+  </front>
+
+  <middle>
+
+    <section anchor="Introduction" title="Introduction">
+      <t>[[ED: The issue tracker for this document can be found at
+	https://github.com/elear/mtgvenue/issues/.]]</t>
+      <t>The IAOC has responsibility for arranging IETF plenary meeting venue
+        selection and operation.  The purpose of this document is to
+        guide the IAOC in their selection of regions, cities, and
+        facilities, and hotels.  The IAOC applies this guidance at
+        different points in the process in an attempt to faithfully
+        meet the requirements of the IETF community.  We specify a set
+        of general criteria for venue selection and several requirements for
+	transparency and community consultation.</t>
+
+	<t>It remains the responsibility of the IAOC to apply their best
+	judgment. The IAOC accepts input and feedback both during the
+	consultation process and later (for instance when there are changes in the
+	situation at a chosen location). Any appeals remain subject to
+	the provisions of <xref target="RFC4071">BCP101</xref>.  As
+	always, the community is encouraged to provide direct feedback to the
+	NOMCOM, IESG, and IAB regarding the discharge of the IAOC's
+	performance.
+	</t>
+      <t>Three terms describe the places for which the IETF contracts
+          services:<list style="hanging">
+          <t hangText="Venue:  "><vspace />This is an umbrella term for the
+            city, meeting resources and guest room resources.</t>
+          <t hangText="Facility:  "><vspace />The building that houses
+            meeting rooms and associated resources.  It may also
+            house an IETF Hotel.
+	  </t>
+          <t hangText="IETF Hotels:  "><vspace />One or more hotels, in close
+            proximity to the Facility, where the IETF guest room allocations are
+            negotiated and IETF SSIDs are in use.</t>
+        </list></t>
+<t>
+      The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL
+      NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and
+      "OPTIONAL" in this document are to be interpreted as described in
+      <xref target="RFC2119" />.
+</t>
+    </section>
+
+    <section anchor="objectives" title="Venue Selection Objectives">
+      <section anchor="core" title="Core Values">
+        <t>Some IETF values pervade the selection process. These often are
+          applicable to multiple requirements listed in this document. They are
+          not limited to the following, but at minimum include: <list
+            style="hanging">
+            <t hangText="Why do we meet?"><vspace />We meet to pursue the IETF's
+              mission <xref target="RFC3935" />, partly by advancing the
+              development of Internet-Drafts and RFCs. We also seek to
+              facilitate attendee participation in multiple topics and to enable
+              cross-pollination of ideas and technologies.</t>
+
+            <t hangText="Inclusiveness:"><vspace />We would like to facilitate
+              the onsite or remote participation of anyone who wants to be
+              involved.</t>
+            <t>Every country has limits on who it will permit within its
+              borders. However the IETF seeks to: <list style="numbers">
+                <t>Minimize situations in which onerous entry regulations
+                  prevent participants from attending meetings, or failing that
+                  to distribute meeting locations such that onerous entry
+                  regulations are not always experienced by the same attendees </t>
+                <t>Avoid meeting in countries with laws that effectively exclude
+                  people on the basis of race, religion, gender, sexual
+                  orientation, national origin, or gender identity</t>
+              </list></t>
+
+            <t hangText="Where do we meet?"><vspace />We meet in different
+              locations globally, in order to spread the difficulty and cost of
+              travel among active participants, balancing travel time and
+              expense across the regions in which IETF participants are
+              based.</t>
+
+            <t hangText="Internet Access:"><vspace />As an organization, we
+              write specifications for the Internet, and we use it heavily.
+              Meeting attendees need unfiltered access to the general Internet
+              and our corporate networks.  "Unfiltered access" in this
+              case means that all forms of communication are allowed.
+              This includes, but is not limited to, access to corporate networks
+              via encrypted VPNs from the meeting Facility and Hotels, including
+              overflow hotels. We also need open network access available at
+              high enough data rates, at the meeting Facility, to support our
+              work, including the support of remote
+              participation. Beyond this, we are the first users of
+              our own technology.  Any filtering may cause a problem
+              with that technology development.  In some cases,
+              local laws may require some filtering.  We seek to
+              avoid such locales without reducing the
+              pool of cities to an unacceptable level by stating a
+              number of criteria below, one mandatory and others
+              important, to allow for the case where local laws may
+              require filtering in some circumstances.<xref
+                target="MeetingNet" /></t>
+
+            <t hangText="Focus:"><vspace />We meet to have focused technical
+              discussions. These are not limited to scheduled breakout sessions,
+              although of course those are important. They also happen over
+              meals or drinks -- including a specific type of non-session that
+              we call a "Bar BOF" -- or in side meetings. Environments that are
+              noisy or distracting prevent that or reduce its effectiveness, and
+              are therefore less desirable as a meeting Facility.</t>
+
+            <t hangText="Economics:"><vspace />Meeting attendees participate as
+              individuals. While many are underwritten by employers or sponsors,
+              many are self-funded. In order to reduce participation costs and
+              travel effort, we therefore seek locations that provide convenient
+              budget alternatives for food and lodging, and which minimize
+              travel segments from major airports to the Venue. Within reason,
+              budget should not be a barrier to accommodation.</t>
+
+            <t hangText="Least Astonishment and Openness:"><vspace /> Regular participants
+              should not be surprised by meeting Venue selections, particularly
+              when it comes to locales. To avoid surprise, the venue
+              selection process, as with all other IETF processes,
+              should be as open as practicable.  It should be possible
+              for the community to engage early to express its views
+              on prospective selections, so that the community, IAOC,
+              and IAD can exchange views as to appropriateness long
+              before a venue contract is considered.</t>
+          </list></t>
+      </section>
+
+      <section anchor="nonobjectives" title="Venue Selection Non-Objectives">
+        <t>IETF meeting Venues are not selected or declined with the explicit
+          purposes of:<list style="hanging">
+
+            <t hangText="Politics:  "><vspace />Endorsing or condemning
+              particular countries, political paradigms, laws, regulations, or
+              policies.</t>
+
+            <t hangText="Maximal attendance:  "><vspace />
+	      While the IETF strives to be as inclusive as possible
+              both online and in person, maximal
+              meeting attendance in and of itself is not a goal. It
+              would defeat a key goal of meeting if
+              active contributors with differing
+              points of view did not have the opportunity to resolve their
+              disagreements, no matter how full the rooms.
+            </t>
+            <t hangText="Tourism:  "><vspace />Variety in site-seeing
+              experiences.</t>
+          </list></t>
+      </section>
+
+    </section>
+    <section anchor="criteria" title="Meeting Criteria">
+      <t>This section contains the criteria for IETF meetings.  It is
+      broken down into three subsections: mandatory criteria,
+      important criteria, and other considerations, each as explained
+      below.
+      </t>
+    <section anchor="mandatories" title="Mandatory Criteria">
+     <t>If criteria in this subsection cannot be met, a particular
+       location is unacceptable for selection, and the IAOC MUST NOT 
+       enter into a contract.  Should the IAOC learn that a location no
+       longer can meet a mandatory requirement after having entered
+       into a contract, it will inform the community and address the
+       matter on a case by case basis.</t>
+     <t><list style="symbols">
+       <t>The Facility MUST be assessed to be able to provide sufficient
+         space in an appropriate layout to accommodate the expected
+         number of people to attend that meeting.</t>
+       <t>The Facility and IETF Hotels MUST provide wheelchair access
+	 to accommodate the number of people who are anticipated to
+	 require it.</t>
+       <t>The venue MUST provide unfiltered access to
+	 the Internet, to the extent permitted by governing laws and
+	 regulations.</t>
+       </list>
+       </t>
+    </section>
+
+    <section anchor="importants" title="Important Criteria">
+      <t>The criteria in this subsection are not mandatory,
+              but are still highly significant. It may be necessary to
+              trade one or more of these criteria off against others.
+              A Venue that meets more of these criteria is on the
+              whole more preferable than another that meets less of
+              these criteria. Requirements classed as Important can
+              also be balanced across Venue selections for multiple
+              meetings.  When a particular requirement in this section
+              cannot be met, the IAOC MUST notify the community at the
+              time the venue is booked.  Furthermore, the IAOC is
+              requested to assist those who, as a result, may be
+              inconvenienced in some way.
+      </t>
+        <section title="Venue City Critera">
+	<t><list style="symbols">
+          <t>Travel to the Venue is acceptable based on cost, time, and burden
+            for participants traveling from multiple regions. It is anticipated
+            that the burden borne will be generally shared over the course of
+            multiple years.</t>
+          <t>The Venue is assessed as favorable for obtaining a host and
+            sponsors. That is, the Meeting is in a location and at a price that
+            it is possible and probable to find a host and sponsors. </t>
+          <t>Travel barriers to entry, including visa requirements,
+	    are unlikely to impede attendance by an overwhelming
+	    majority of participants.</t>
+          <t>Economic, safety, and health risks associated with this Venue are
+            acceptable. </t>
+	  </list>
+	</t>
+	</section>
+	<section title="Basic Venue Criteria">
+	<t>The following requirements relate to the Venue and Facilities.</t>
+        <t>The IETF operates internationally and adjusts to
+          local requirements. Facilities selected for IETF Meetings conform with
+          local health, safety and accessibility laws and regulations. A useful
+          discussion of related considerations in evaluating this criterion is
+          at: <eref
+            target="http://www.sigaccess.org/welcome-to-sigaccess/resources/accessible-conference-guide/" />
+          <list>
+            <t><list style="hanging">
+                <t hangText="***  Editor's Note  *** "><vspace />In the spirit
+                  of the 'international' focus, we need a comprehensive document
+                  that is similar to the one cited, but without a national
+                  focus. The current reference is US-specific. /d</t>
+              </list></t>
+          </list></t>
+
+        <t>In addition:</t>
+	<t>
+	  <list style="symbols">
+	  <t>There are sufficient places (e.g., a mix of hallways, bars, meeting
+	    rooms, and restaurants) for people to hold ad hoc
+	    conversations and group discussions in the combination of
+	    spaces offered by the facilities, hotels and
+	    bars/restaurants in the surrounding area, within walking
+	    distance (5-10').</t>
+          <t>The cost of guest rooms, meeting space, meeting food and beverage
+            is affordable, within the norms of business travel.</t>
+<!--          <t>The economics of the Venue are in line with expectations
+            agreed between ISOC and the IAOC.</t> -->
+          <t>The Facility is accessible by people with disabilities.
+          While we mandate wheelchair accessibility, other forms are
+          important, and should be provided to the extent possible,
+          based on anticipated needs of the community.</t>
+	  </list>
+	</t>
+	</section>
+	<section title="Technical Meeting Needs">
+	<t>The following criteria relate to technical meeting needs.</t>
+	<t>
+	<list style="symbols">
+          <t>The Facility's support technologies and services -- network,
+            audio-video, etc. -- are sufficient for the anticipated activities
+            at the meeting, or the Facility is willing to add such
+            infrastructure or these support technologies and services might be
+            provided by a third party, all at no -- or at an acceptable -- cost
+            to the IETF.</t>
+
+          <t>The Facility directly provides, or permits and facilitates, the
+            delivery of a high performance, robust, unfiltered and unmodified
+            IETF Network.</t>
+
+          <t>The IETF Hotel(s) directly provide, or else permit and facilitate,
+            the delivery of a high performance, robust, unfiltered and
+            unmodified Internet service for the public areas and guest rooms;
+            this service is typically included in the cost of the room.</t>
+	</list>
+	</t>
+	</section>
+	<section title="Hotel Needs">
+	<t>The following criteria relate to IETF Hotels.</t>
+	<t>
+	<list style="symbols">
+          <t>The IETF Hotel(s) are within close proximity to each other and the
+            Facility.</t>
+          <t>The guest rooms at the IETF Hotel(s) are sufficient in number to
+            house 1/3 or more of projected meeting attendees.</t>
+          <t>Overflow Hotels can be placed under contract, within convenient
+            travel time of the Facility and at a variety of guest room
+            rates.</t>
+          <t>The Venue environs include budget hotels within convenient travel
+            time, cost, and effort.</t>
+          <t>The IETF Hotel(s) are accessible by people with disabilities.
+          While we mandate wheelchair accessibility, other forms are
+          important, and should be provided to the extent possible,
+          based on anticipated needs of the community.</t>
+          <t>At least one IETF Hotel has a space for use as a lounge,
+            conducive to planned and ad hoc meetings and chatting, as well
+            as working online. There are tables with seating, convenient for
+            small meetings with laptops. These can be at an open bar or casual
+            restaurant. Preferably the lounge area is on the path between the
+            meeting rooms and the hotel entrance, and is available all day and
+            night.</t>
+	  </list>
+	</t>
+	</section>
+	<section title="Food and Beverage">
+	<t>It is said that an army travels on its stomach.  So too
+	does the IETF.  The following criteria relate to food and
+	beverage.</t>
+	<t>
+	<list style="symbols">
+          <t>The Venue environs, which includes both onsite, as well as areas
+            within a reasonable walking distance or conveniently
+            accessible by a short taxi ride or by local
+            public transportation, have convenient and inexpensive
+            choices for meals that can accommodate a wide range of dietary
+            requirements.</t>
+          <t>The Venue environs include grocery shopping that will accommodate a
+            wide range of dietary requirements, within a reasonable walking
+            distance, or conveniently accessible by a short taxi, bus, or subway
+            ride, from the Facility and IETF Hotels.</t>
+          <t>A range of attendee's health-related and religion-related dietary
+            requirements can be satisfied with robust and flexible onsite
+            service or through access to an adequate grocery.</t>
+	  </list>
+	</t>
+	</section>
+    </section>
+    <section anchor="otherconsiderations" title="Other Consideraitons">
+      <t>The following considerations are desirable, but not as
+      important as the preceding requirements, and thus should not be
+      traded off for them.
+      </t>
+          <t>We have something of a preference for an IETF meeting to
+            be under "One Roof". That
+            is, qualified meeting space and guest rooms are available in the
+            same facility.</t>
+          <t>It is desirable for overflow hotels provide reasonable,
+            reliable, unfiltered Internet service for the public areas
+            and guest rooms; this service is included in the cost of the room.</t>
+          <t>It is desirable to enter into a multi-event contract with the Facility
+            and IETF Hotels to optimize meeting and attendee benefits, i.e., reduce
+            administrative costs and reduce direct attendee costs, will be
+            considered a positive factor. Such a contract can be considered
+            after at least one IETF meeting has been held at the Facility.</t>
+	  <t>Particularly when we are considering a city for the first
+	    time, it is desirable to have someone who is familiar 
+	    with both the locale and the IETF participate in the site
+	    selection process.  Such a person can provide guidance
+	    regarding safety, location of local services, and
+	    understanding best ways to get to and from the Venue, and
+	    local customs, as well as identify how our requirements are
+	    met.
+	  </t>
+    </section>
+    </section>
+    <section anchor="roles" title="Venue Selection Roles">
+      <t>The formal structure of IETF administrative support functions is
+        documented in <xref target="RFC4071">BCP 101</xref>, <xref
+          target="RFC4371" />, <xref target="RFC7691" />. The reader is expected
+        to be familiar with the entities and roles defined by that document, in
+        particular for the IASA, ISOC, IAOC and IAD. This section covers the
+        meeting selection related roles of these and other parties that
+        participate in the process. Note that roles beyond meeting selection,
+        e.g., actually running and reporting on meetings, are outside the scope
+        of this document.</t>
+
+      <section title="IETF Participants">
+        <t>While perhaps obvious, it is important to note that IETF meetings
+          serve all those who contribute to the work of the IETF. This includes
+          those who attend meetings in person, from newcomer to frequent
+          attendee, to those who participate remotely, as well as those who do
+          not attend but contribute to new RFCs. Potential new contributors are
+          also considered in the process.</t>
+        <t>Participants have a responsibility to express their views about
+          venues early and often, by responding to surveys or other
+          solicitations from the IAD or IAOC, and by initiating fresh input as
+          the Participant becomes aware of changes in venues that have been
+          reviews. This permits those responsible for venue selection to be made
+          aware of concerns relating to particular locations well in advance of
+          having entered into contract discussions.</t>
+      </section>
+
+      <section title="IESG and IETF Chair">
+        <t>The Internet Engineering Steering Group (IESG) comprises the IETF
+          Area Directors and the IETF Chair. Along with the IAB, the IESG is
+          responsible for the management of the IETF, and is the standards
+          approval board for the IETF, as described in <xref format="default"
+            pageno="false" target="RFC2026">BCP9</xref>. This means that the
+          IESG sets high level policies related to, among other things, meeting
+          venues. The IETF Chair, among other things, relays these
+          IESG-determined policies to the IAOC. The IETF Chair is also a member
+          of the IAOC.</t>
+      </section>
+
+      <section title="The Internet Society">
+        <t>With respect to IETF meetings, the Internet Society (ISOC): <list
+            style="symbols">
+            <t>Executes all Venue contracts on behalf of the IETF at the request
+              of the IAOC</t>
+            <t>Solicits meeting sponsorships</t>
+            <t>Collects all meeting-related revenues, including registration
+              fees, sponsorships, hotel commissions, and other miscellaneous
+              revenues</t>
+          </list> ISOC also provides accounting services, such as invoicing and
+          monthly financial statements. </t>
+      </section>
+
+      <section title="IETF Administrative Oversight Committee">
+        <t>The IETF Administrative Oversight Committee (IAOC) has the
+          responsibility to oversee and select IETF meeting venues. It instructs
+          the IAD to work with the Internet Society to write the relevant
+          contracts. It approves the IETF meetings calendar. In cooperation with
+          the IAD, the IAOC takes necessary actions to ensure that it is aware
+          of participant concerns about particular venues as early in the
+          process as is feasible.</t>
+      </section>
+
+      <section title="IETF Administrative Support Activity">
+        <t>The IETF Administrative Support Activity (IASA) supports the meeting
+          selection process. This includes identifying, qualifying and reporting
+          on potential meeting sites, as well as supporting meeting Venue
+          contract negotiation. The IETF Secretariat is part of the IASA under
+          the management of the IAD. The IAD takes appropriate actions to
+          solicit community input regarding both retrospective and prospective
+          feedback from participants. </t>
+      </section>
+
+      <section title="IETF Administrative Director">
+        <t>The IETF Administrative Director (IAD) coordinates and supports the
+          activities of the IETF Secretariat, the IAOC Meetings Committee and
+          the IAOC to ensure the timely execution of the meeting process. This
+          includes participating in the IAOC Meeting Subcommittee and ensuring
+          its efforts are documented, leading Venue contract negotiation, and
+          coordinating contract execution with ISOC. The meetings budget is
+          managed by the IAD.</t>
+      </section>
+
+      <section title="IAOC Meeting Committee">
+        <t>The fundamental purpose of the Meetings Committee is to participate
+          in the Venue selection process, and to formulate recommendations to
+          the IAOC regarding meeting sites. It also tracks the meetings
+          sponsorship program, recommends extraordinary meeting-related
+          expenses, and recommends the IETF meetings calendar to the IAOC. The
+          charter of the committee is at: <eref
+            target="https://iaoc.ietf.org/committees.html#meetings" />.</t>
+        <t>Membership in the Meetings Committee is at the discretion of the
+          IAOC; it includes an IAOC appointed chair, the IETF Administrative
+          Director (IAD), IAOC members, representatives from the Secretariat,
+          and interested members of the community.</t>
+      </section>
+    </section>
+
+    <section anchor="steps" title="Venue Selection Steps">
+      <t>The following sequence is used by the IAOC to select
+      venues. Unless otherwise stated below, the IAOC may evolve these
+      steps over time without updating this document.
+      </t>
+
+      
+      <section title="Identification">
+        <t>Four years out, a process identifies cities that might be candidates
+          for meetings.  For example: <list style="letters">
+            <t>The IAOC selects regions, cities, and dates for meetings.</t>
+            <t>A list of target cities per region is provided to the
+              Secretariat, with host preferences, if known.</t>
+            <t>Potential venues in preferred cities are identified and receive
+              preliminary investigation, including reviews of Official Advisory
+              Sources, consultation with specialty travel services, frequent
+              travelers and local contacts to identify possible barriers to
+              holding a successful meeting in the target cities.</t>
+            <t>Investigated cities and findings are provided by the Secretariat
+              to the Meetings Committee for further review. Meetings Committee
+              makes a recommendation to the IAOC of investigated/target cities
+              to consider further as well as issues identified and the results
+              of research conducted.</t>
+          </list></t>
+      </section>
+
+      <section title="Consultation">
+	<t>
+	  The IAOC MUST consult the community about potential new venues
+	  prior to them being booked.  The timing and means by which it does so
+	  may vary over time, but MUST include references to any
+	  notable travel risks.  The consultation may overlap
+	  with the previous step (identification).
+        </t>
+        <t>For example:<list style="letters">
+            <t>The IAOC asks the community whether there are any barriers to
+              holding a successful meeting in any of the target cities in the
+              set.</t>
+            <t>Community responses are reviewed and concerns investigated by the
+              Meetings Committee. The results together with recommendations for
+              whether each city should be considered as potential meeting
+              location is provided to the IAOC.</t>
+            <t>The IAOC identifies which cities are to be considered as a
+              potential meeting location.</t>
+            <t>On a public web page, the IAOC lists all candidate cities, when
+              community input was solicited, and if a city is to be considered
+              as a potential meeting location.</t>
+            <t>The Meetings Committee pursues potential meeting locations based
+              on the posted list of cities that have been identified as a
+              potential meeting locations.</t>
+          </list></t>
+      </section>
+
+      <section title="Qualification">
+        <t>Visit: <list style="letters">
+            <t>Secretariat assesses "vetted" target cities to determine
+              availability and conformance to criteria.</t>
+            <t>Meetings Committee approves potential cities for site
+              qualification visit.</t>
+            <t>Site qualification visits are arranged by Secretariat and
+              preliminary negotiations are undertaken with selected potential
+              sites.</t>
+            <t>Site qualification visit is conducted using the checklist
+              along the lines of what is included in <xref
+              target="checklist"/>; the site visit team prepares a site
+              report and discusses it with the Meetings Committee.</t>
+          </list></t>
+      </section>
+
+      <section title="Negotiation">
+        <t>2.75 - 3 years out, initiate contract negotiations: <list
+            style="letters">
+            <t>The Meetings Committee reviews the Venue options based on Venue
+              selection criteria and recommends a Venue to the IAOC. Only
+              options that meet all Mandatory labeled criteria might be
+              recommended.</t>
+            <t>IAOC selects a Venue for contracting as well as a back-up
+              contracting Venue, if available.</t>
+            <t>Secretariat negotiates with selected Venue. IAD reviews contract
+              and requests IAOC and ISOC approval of contract and authority for
+              Secretariat to execute contract on ISOC's behalf.</t>
+            <t>Contracts are executed.</t>
+	    <t>The venue is announced.  At this time, the
+	    announcement MUST include any notable travel risks or
+	    references thereto.</t>
+          </list></t>
+      </section>
+
+      <section title="Late Changes">
+	<t>If at any time after a contract is signed the IAOC learns
+	where a Venue's circumstances have significantly changed, such
+	that the Important or Mandatory criteria can no longer be met,
+	the IAOC MUST reconsider the selection.  A description of how
+	reconsideration currently takes place is found in
+	<xref target="flowchart"/>.  The IAOC will gauge the cost of
+	making a change against the ability of the IETF to conclude a
+	successful meeting, and make a final determination based on
+	their best judgment. When there is enough time to do so, the IAOC
+	is expected to consult the community about changes.
+	</t>
+      </section>
+
+    </section>
+
+
+
+    <section anchor="IANA" title="IANA Considerations">
+      <t>This memo asks the IANA for no new parameters.</t>
+    </section>
+
+    <section anchor="Security" title="Security Considerations">
+      <t>This note proposes no protocols, and therefore no new protocol
+        insecurities.</t>
+    </section>
+
+    <section anchor="Privacy" title="Privacy Considerations">
+      <t>This note reveals no personally identifying information apart from its
+        authorship.</t>
+    </section>
+
+    <section anchor="Acknowledgements" title="Acknowledgements">
+      <t>This document was originally assembled and edited by Fred Baker.
+        Additional commentary came from Jari Arkko, Scott Bradner, Alissa
+        Cooper, and other participants in the MtgVenue working
+        group.</t>
+    </section>
+
+  </middle>
+
+  <back>
+    <!--references split to informative and normative -->
+    <references title="Normative References">
+      &RFC2119;
+      <reference anchor="RFC2026"
+        target="http://www.rfc-editor.org/info/rfc2026">
+
+        <front>
+          <title>The Internet Standards Process -- Revision 3</title>
+          <author fullname="S. Bradner" initials="S." surname="Bradner">
+            <organization />
+          </author>
+          <date month="October" year="1996" />
+          <abstract>
+            <t>This memo documents the process used by the Internet community
+              for the standardization of protocols and procedures. It defines
+              the stages in the standardization process, the requirements for
+              moving a document between stages and the types of documents used
+              during this process. This document specifies an Internet Best
+              Current Practices for the Internet Community, and requests
+              discussion and suggestions for improvements.</t>
+          </abstract>
+        </front>
+        <seriesInfo name="BCP" value="9" />
+        <seriesInfo name="RFC" value="2026" />
+        <seriesInfo name="DOI" value="10.17487/RFC2026" />
+      </reference>
+
+      <reference anchor="RFC4071"
+        target="http://www.rfc-editor.org/info/rfc4071">
+        <front>
+          <title>Structure of the IETF Administrative Support Activity
+            (IASA)</title>
+          <author fullname="R. Austein" initials="R." role="editor"
+            surname="Austein">
+            <organization />
+          </author>
+          <author fullname="B. Wijnen" initials="B." role="editor"
+            surname="Wijnen">
+            <organization />
+          </author>
+          <date month="April" year="2005" />
+          <abstract>
+            <t>This document describes the structure of the IETF Administrative
+              Support Activity (IASA) as an activity housed within the Internet
+              Society (ISOC). It defines the roles and responsibilities of the
+              IETF Administrative Oversight Committee (IAOC), the IETF
+              Administrative Director (IAD), and ISOC in the fiscal and
+              administrative support of the IETF standards process. It also
+              defines the membership and selection rules for the IAOC. This
+              document specifies an Internet Best Current Practices for the
+              Internet Community, and requests discussion and suggestions for
+              improvements.</t>
+          </abstract>
+        </front>
+        <seriesInfo name="BCP" value="101" />
+        <seriesInfo name="RFC" value="4071" />
+        <seriesInfo name="DOI" value="10.17487/RFC4071" />
+      </reference>
+
+      <reference anchor="RFC4371"
+        target="http://www.rfc-editor.org/info/rfc4371">
+        <front>
+          <title>BCP 101 Update for IPR Trust</title>
+          <author fullname="B. Carpenter" initials="B." role="editor"
+            surname="Carpenter">
+            <organization />
+          </author>
+          <author fullname="L. Lynch" initials="L." role="editor"
+            surname="Lynch">
+            <organization />
+          </author>
+          <date month="January" year="2006" />
+          <abstract>
+            <t>This document updates BCP 101 to take account of the new IETF
+              Intellectual Property Trust. This document specifies an Internet
+              Best Current Practices for the Internet Community, and requests
+              discussion and suggestions for improvements.</t>
+          </abstract>
+        </front>
+        <seriesInfo name="BCP" value="101" />
+        <seriesInfo name="RFC" value="4371" />
+        <seriesInfo name="DOI" value="10.17487/RFC4371" />
+      </reference>
+
+      <reference anchor="RFC7691"
+        target="http://www.rfc-editor.org/info/rfc7691">
+        <front>
+          <title>Updating the Term Dates of IETF Administrative Oversight
+            Committee (IAOC) Members</title>
+          <author fullname="S. Bradner" initials="S." role="editor"
+            surname="Bradner">
+            <organization />
+          </author>
+          <date month="November" year="2015" />
+          <abstract>
+            <t>BCP 101 defines the start and end dates for the terms of IETF
+              Administrative Oversight Committee (IAOC) members; these terms
+              have proven to be impractical. This memo updates BCP 101 to direct
+              the IAOC to establish more practical start and end dates for terms
+              of IAOC members.</t>
+          </abstract>
+        </front>
+        <seriesInfo name="BCP" value="101" />
+        <seriesInfo name="RFC" value="7691" />
+        <seriesInfo name="DOI" value="10.17487/RFC7691" />
+      </reference>
+      <!--
+      <reference anchor="I-D.krishnan-ietf-meeting-policy">
+        <front>
+          <title>High level guidance for the meeting policy of the IETF</title>
+          <author fullname="Suresh Krishnan" initials="S." surname="Krishnan">
+            <organization />
+          </author>
+          <date day="8" month="July" year="2016" />
+          <abstract>
+            <t>This document describes a proposed meeting policy for the IETF
+              and the various stakeholders for realizing such a policy.</t>
+          </abstract>
+        </front>
+        <seriesInfo name="Internet-Draft"
+          value="draft-krishnan-ietf-meeting-policy-01" />
+        <format
+          target="http://www.ietf.org/internet-drafts/draft-krishnan-ietf-meeting-policy-01.txt"
+          type="TXT" />
+      </reference>
+
+-->
+      <reference anchor="MeetingNet">
+        <front>
+          <title>IETF Meeting Network Requirements</title>
+          <author fullname="Karen O'Donoghue" initials="K." surname="O'Donoghue" />
+          <author fullname="Jim Martin" initials="J." surname="Martin" />
+          <author fullname="Chris Elliott" initials="C." surname="Elliott" />
+          <author fullname="Joel Jaeggli" initials="J." surname="Jaeggli" />
+          <date />
+        </front>
+        <seriesInfo name="WEB"
+          value="https://iaoc.ietf.org/ietf-network-requirements.html" />
+      </reference>
+
+    </references>
+
+    <references title="Informative References">
+
+      <reference anchor="RFC3935">
+
+        <front>
+          <title>A Mission Statement for the IETF</title>
+          <author fullname="H. Alvestrand" initials="H." surname="Alvestrand">
+            <organization />
+          </author>
+          <date month="October" year="2004" />
+          <abstract>
+            <t>This memo gives a mission statement for the IETF, tries to define
+              the terms used in the statement sufficiently to make the mission
+              statement understandable and useful, argues why the IETF needs a
+              mission statement, and tries to capture some of the debate that
+              led to this point. This document specifies an Internet Best
+              Current Practices for the Internet Community, and requests
+              discussion and suggestions for improvements.</t>
+          </abstract>
+        </front>
+
+        <seriesInfo name="BCP" value="95" />
+        <seriesInfo name="RFC" value="3935" />
+        <format octets="16639"
+          target="http://www.rfc-editor.org/rfc/rfc3935.txt" type="TXT" />
+      </reference>
+
+      <reference anchor="I-D.barnes-healthy-food">
+        <front>
+          <title>Healthy Food and Special Dietary Requirements for IETF
+            meetings</title>
+          <author fullname="Mary Barnes" initials="M." surname="Barnes">
+            <organization />
+          </author>
+          <date day="16" month="July" year="2013" />
+          <abstract>
+            <t>This document describes the basic requirements for food for folks
+              that attend IETF meetings require special diets, as well as those
+              that prefer to eat healthy. While, the variety of special diets is
+              quite broad, the most general categories are described. There can
+              be controversy as to what constitutes healthy eating, but there
+              are some common, generally available foods that comprise the basis
+              for healthy eating and special diets. This document provides some
+              recommendations to meeting planners, as well as participants, in
+              handling these requirements.</t>
+          </abstract>
+        </front>
+        <seriesInfo name="Internet-Draft" value="draft-barnes-healthy-food-07" />
+        <format
+          target="http://www.ietf.org/internet-drafts/draft-barnes-healthy-food-07.txt"
+          type="TXT" />
+      </reference>
+    </references>
+
+    <section anchor="checklist" title="Site Qualification Visit Checklist">
+      <t>
+        This section is based on the PreQualification RFP, dated January
+        23, 2016, which is available at
+        <eref
+            target="https://iaoc.ietf.org/meetings-committee/venue-selection.html"
+            />.  The contents of the link may be changed as needed.
+      </t>
+      <texttable style="all" align="left">
+        <preamble>Prequalification Specification</preamble>
+        <ttcol></ttcol><ttcol></ttcol><ttcol></ttcol><ttcol></ttcol>
+        <c>Meeting Dates:</c>
+        <c>_________________</c>
+        <c>Contact:</c>
+        <c>_________________</c>
+        <c>City:</c><c>_______________</c><c>Phone:</c> <c>_______________</c>
+        <c>Venue Considered:</c> <c>_______________</c> <c> Email:</c> <c>_______________</c>
+      </texttable>
+      <!--<texttable style="all" align="left">
+	  <preamble></preamble>
+          <ttcol>Criteria</ttcol> <ttcol>Required</ttcol> 
+          <c></c>          <c></c> 
+          <c></c>          <c></c> 
+          <c></c>          <c></c> 
+          <c></c>          <c></c> 
+          <c></c>          <c></c>
+          <X postamble><X/postamble>
+          </texttable> -->
+      <texttable style="all" align="left" >
+	<preamble>Meeting Space Requirements:</preamble>
+        <ttcol>Purpose</ttcol>
+        <ttcol>Space Required / Set</ttcol>
+        <ttcol>sf/sm</ttcol>
+        <ttcol>Room Assigned</ttcol>
+        <ttcol>Daily Rate + (set-up rate)</ttcol>
+        <ttcol>Days + (set-up)</ttcol>
+       <ttcol>Total Price</ttcol>
+       <c>Registration / Breaks** </c><c>1200 / custom</c><c>13,500 / 1254</c><c>Reg areas or foyers</c><c></c><c>6 + (1)</c><c></c>
+       <c>NOC</c><c>25 / conf</c><c>1200 / 111</c><c></c><c></c><c>8 + (5)</c><c></c>
+       <c>Terminal Room</c><c>75 / class</c><c>1350 / 125</c><c></c><c></c><c>7 + (1)</c><c></c>
+       <c>Storage (if Reg &lt; 1000sf)</c><c></c><c>350 / 33</c><c></c><c></c><c>6 + (4)</c><c></c>
+       <c>Plenary *</c><c>900 / theatre</c><c>8500 / 790</c><c></c><c></c><c> 2</c><c></c>
+       <c>Breakout 1</c><c>80 / theatre</c><c>800 / 74</c><c></c><c></c><c> 6</c><c></c>
+       <c>Breakout 2</c><c>100 / theatre</c><c>1000 / 93</c><c></c><c></c><c> 6</c><c></c>
+       <c>Breakout 3</c><c>100 / theatre</c><c>1000 / 93</c><c></c><c></c><c> 6</c><c></c>
+       <c>Breakout 4</c><c>150 / theatre</c><c>1400 / 130</c><c></c><c></c><c> 6</c><c></c>
+       <c>Breakout 5</c><c>150 / theatre</c><c>1400 / 130</c><c></c><c></c><c> 7</c><c></c>
+       <c>Breakout 6</c><c>200 / theatre</c><c>1900 / 177</c><c></c><c></c><c> 7</c><c></c>
+       <c>Breakout 7</c><c>250 / theatre</c><c>2400 / 223</c><c></c><c></c><c>6</c><c></c>
+       <c>Breakout 8</c><c>300 / theatre</c><c>2800 / 260</c><c></c><c></c><c>6</c><c></c>
+       <c>Office 1 Registration</c><c>10 / conf</c><c>1000 / 93</c><c></c><c></c><c>6 + (4)</c><c></c>
+       <c>Mtg Rm 1 (IAB)</c><c>8 / conf</c><c>350 / 33</c><c></c><c></c><c>6</c><c></c>
+       <c>Mtg Rm 2 (ISOC1)</c><c>20 / conf</c><c>900 / 84</c><c></c><c></c><c>6</c><c></c>
+       <c>Mtg Rm 3 (ISOC2)</c><c>20 / conf</c><c>900 / 84</c><c></c><c></c><c>6</c><c></c>
+       <c>Mtg Rm 4 (IAOC / IAD)</c><c>15 / conf</c><c>650 / 60</c><c></c><c></c><c>6</c><c></c>
+       <c>Mtg Rm 5 (NC)</c><c>15 / conf</c><c>650 / 60</c><c></c><c></c><c>6</c><c></c>
+       <c>Mtg Rm 6 (NC IV)</c><c>Nov 5 / conf</c><c>150 / 14</c><c></c><c></c><c>6</c><c></c>
+       <c>Mtg Rm 7 (40U)</c><c>40 / u-shape</c><c>1550 / 144</c><c></c><c></c><c>7</c><c></c>
+       <c>Mtg Rm 8 (20U)</c><c>20 / u-shape</c><c>950 / 88</c><c></c><c></c><c>6</c><c></c>
+       <c>Mtg Rm 9 (IESG)</c><c>16 / conf</c><c>800 / 74</c><c></c><c></c><c>6</c><c></c>
+       <c>I: Postel Rec (WedPM)</c><c>40 / rec</c><c>400 / 37</c><c></c><c></c><c>1</c><c></c>
+       <c>I: AC (Fri PM)</c><c>70 / custom </c><c>1700 / 158</c><c></c><c></c><c>1</c><c></c>
+       <c>I: BoT (Sat / Sun)</c><c>70 / custom</c><c>1700 / 158</c><c>Same as AC</c><c></c><c>2</c><c></c>
+       <c>I: Bot Lunch (Sat / Sun)</c><c>40 / banquet</c><c>550 / 51</c><c></c><c></c><c> 2</c><c></c>
+       <c>I: Brfg Panel (Tue lunch)</c><c>150 / theatre</c><c>1400 / 130</c><c>Same as BO4</c><c></c><c>1</c><c></c>
+       <c>I: Rec / Dinner (Fri)</c><c>50 / rec / ban</c><c>700 / 65</c><c></c><c></c><c>1</c><c></c>
+       <c>I: Fellows Dinner</c><c>70 / rec / ban</c><c>900 / 84</c><c></c><c></c><c>1</c><c></c>
+       <c>Lounge</c><c>50 / lounge</c><c>600 / 56</c><c></c><c></c><c>5</c><c></c>
+       <c>Companion Rec</c><c>20 / rec</c><c>200 / 19</c><c></c><c></c><c>1</c><c></c>
+       <c>Newcomers Rec</c><c>300 / rec</c><c>2500 / 232</c><c></c><c></c><c>1</c><c></c>
+       <c>Welcome Rec</c><c>800 / rec</c><c>6400 / 595</c><c></c><c></c><c>1</c><c></c>
+       <c>Hackathon</c><c>200 / class</c><c>3000 / 279</c><c></c><c></c><c>2 + (1)</c><c></c>
+       <c>Bits n Bytes</c><c>700 / rec</c><c>7000 / 650</c><c></c><c></c><c> 2</c><c></c>
+
+      </texttable>
+      <t>
+        <list>
+          <t>* Breakouts 6 +7+8 (or some combination thereof) to be used as the Plenary as Plenary and Breakouts do not run simultaneously</t>
+          <t>** Additional space required, not included in total meeting space</t>
+          <t>Note: Prices quoted are those that will apply on the dates of the event and include all tax, services and fees</t>
+        </list>
+      </t>
+      <texttable style="all" align="left" >
+	<preamble>Accomodation:</preamble>
+        <ttcol>Day/Date</ttcol> <ttcol> Total
+        Rooms
+        Required</ttcol> <ttcol>
+        Desired
+        Rooms at
+        Primary
+        Hotel</ttcol> <ttcol>
+        Primary
+        Hotel
+        Availability</ttcol> <ttcol>
+        Rate*
+        Primary
+        Hotel</ttcol> <ttcol>
+        Desired
+        Rooms at
+        Overflow
+        Hotels</ttcol> <ttcol>
+        Overflow
+        Hotel
+        Availability</ttcol> <ttcol>
+        Rate *
+        Overflow
+        Hotel</ttcol>
+
+        <c>Total room nights</c> <c>5,250 (780 peak)</c> <c>4,245 (600 peak)</c> <c></c><c></c><c>1,005 (180 peak)</c> <c></c><c></c>
+    <c>Monday</c> <c>5</c> <c>5</c> <c></c><c></c> <c>0</c><c></c><c></c>
+    <c>Tuesday</c>   <c>15</c> <c>15</c> <c></c><c></c> <c>0</c><c></c><c></c>
+    <c>Wednesday</c> <c>25</c> <c>25</c>  <c></c><c></c><c>0</c><c></c><c></c>
+    <c>Thursday</c>  <c>50</c> <c>50</c> <c></c><c></c> <c>0</c><c></c><c></c>
+    <c>Friday</c>    <c>185</c> <c>150</c> <c></c><c></c> <c>35</c><c></c><c></c>
+    <c>Saturday</c>  <c>500</c> <c>400</c>  <c></c><c></c><c>100</c><c></c><c></c>
+    <c>Sunday</c>    <c>770</c> <c>600</c>  <c></c><c></c><c>170</c><c></c><c></c>
+    <c>Monday</c>    <c>780</c> <c>600</c>  <c></c><c></c><c>180</c><c></c><c></c>
+    <c>Tuesday</c>   <c>780</c> <c>600</c>  <c></c><c></c><c>180</c><c></c><c></c>
+    <c>Wednesday</c> <c>750</c> <c>600</c>  <c></c><c></c><c>150</c><c></c><c></c>
+    <c>Thursday</c>  <c>700</c> <c>600</c>  <c></c><c></c><c>100</c><c></c><c></c>
+    <c>Friday</c>    <c>370</c> <c>300</c>  <c></c><c></c><c>70</c><c></c><c></c>
+    <c>Saturday</c>  <c>220</c> <c>200</c>  <c></c><c></c><c>20</c><c></c><c></c>
+    <c>Sunday</c>    <c>100</c> <c>100</c>  <c></c><c></c><c>0</c><c></c><c></c>
+          </texttable>
+
+
+      <t>
+        <list style="symbols">
+          <t>Guest-room Internet, breakfast, 10% commission, all tax, service and fees are incorporated into the lodging rate.</t>
+          <t>Guest-room rates quoted are those that will apply on the dates of the event.</t>
+          <t>Attendees will book individually.</t>
+        </list>
+      </t>
+      <texttable style="all" align="left">
+        <preamble>Food and Beverage:</preamble>
+        <ttcol>Purpose</ttcol><ttcol>When</ttcol><ttcol>Service</ttcol>
+        <c>Meet and Greet </c><c>Sunday afternoon (250 - 350 people)</c><c>Cold appetizers, beer and wine</c>
+        <c>Welcome Reception </c><c>Sunday evening (600 - 800 people)</c><c>Appetizers and cocktails (no-host bar)</c>
+        <c>Companion Reception</c>
+        <c>Sunday afternoon (20 - 30 people)</c>
+        <c>Appetizers / non-alcoholic beverages</c>
+        <c>AM Breaks</c><c> Daily beginning Monday (1,000+ people)</c><c>Continental breakfast</c>
+        <c>PM Breaks</c><c> Daily beginning Monday (1,000+ people)</c><c>Light snack with beverages</c>
+        <c>Breakfast</c><c> Daily (15 to 60 people)</c><c>Continental or hot buffet</c>
+        <c>Lunch</c><c>Daily (15 to 70 people)</c><c>Box or buffet</c>
+        <c>Dinner</c><c> Friday and/or Sunday evening (50 people)</c><c>Bar and hot buffet</c>
+        <c>Bits n Bytes (reception)</c><c>Thursday evening (700+ people)</c><c>Appetizers and cocktails</c>
+      </texttable>
+
+      <texttable style="all" align="left">
+        <preamble>Technology:</preamble>
+        <ttcol>Item</ttcol><ttcol>Question</ttcol><ttcol>Response</ttcol>
+        <c>Outside connection</c><c>Can we bring in our own external circuit?</c> <c>_______________</c>
+        <c>Infrastructure</c><c>Can we use your cabling infrastructure to build a
+        dedicated network, including installation of network
+        equipment in data closets and phone rooms?</c> <c>_______________</c>
+        <c>Access</c><c>Is it possible to have 24-hour access to data closets
+        and phone rooms to support the network?</c> <c>_______________</c>
+        <c>Wireless</c><c>Is it possible to deploy a wireless network?</c> <c>_______________</c>
+        <c>Venue network</c><c>Would you be willing to disable your wireless
+        network in the meeting and public spaces?</c> <c>_______________</c>
+        <c>Infrastructure</c><c> Do all proposed meeting rooms have at least one
+        available Category 5 twisted pair connection?</c> <c>_______________</c>
+      </texttable>
+    </section>
+    <section anchor="flowchart" title="Contingency Planning Flow Chart">
+      <t>
+        This section is based on the Contingency Planning Flow Chart
+        which is available at
+        <eref
+            target="https://iaoc.ietf.org/meetings-committee/venue-selection.html"
+            />.  The contents of the link may changed as needed.
+      </t>
+      <t>
+<figure>
+  <artwork>
+          -----
+         (Start)
+          -----
+            |
+            |
+            v
+    +----------------+
+    | Does the IAOC  |     +------------+
+    |believe there is|     |  Can an    |     +-------------+
+    |an unacceptable | Yes | effective  | Yes |   Secure    |
+    | risk in having |---->|F2F meeting |---->|  alternate  |----+
+    | the meeting in |     |be organized|     |meeting venue|    |
+    | the contracted |     | elsewhere? |     +-------------+    |
+    |   location?    |     +------------+                        |
+    +----------------+     /\     |No                            |
+            |No            /      |                              |
+            |         Yes /       |                              |
+            v            /        |                              |
+   +-----------------+  /         |                              |
+   |    Does the     | /     +----------+                        |
+   |community believe|/      |  Can an  |                        |
+   |   there is an   |       |effective |                        |
+   |unacceptable risk|       | virtual  | Yes                    |
+   |  in having the  |       |meeting be|--------+               |
+   |  meeting in the |       |organized |        |               |
+   |   contracted    |       |elsewhere?|        |               |
+   |    location?    |       +----------+        |               |
+   +-----------------+            |No            |               |
+            |No                   |              |               |
+            |                     |              |               |
+            v                     v              v               v
+         -------               -------        -------        ---------
+        (Proceed)             (Cancel )      ( Hold  )      (  Hold   )
+        ( with  )             (  the  )      (virtual)      (relocated)
+        (meeting)             (meeting)      (meeting)      ( meeting )
+         -------               -------        -------        ---------
+</artwork>
+</figure>
+      </t>
+    </section>
+    <section anchor="log" title="Change Log">
+      <t>
+        <list style="hanging">
+          <t hangText="2016-01-12:">Initial version</t>
+          <t hangText="2016-01-21:">Update to reflect
+            https://iaoc.ietf.org/documents/VenueSelectionCriteriaJan2016.pdf
+            and
+            https://iaoc.ietf.org/documents/VenueSelectionProcess11Jan16.pdf,
+            accessed from
+            https://iaoc.ietf.org/private/privatemeetings.html.</t>
+          <t hangText="2016-02-23:">Reorganize and capture IAOC Meetings
+            Committee discussions.</t>
+          <t hangText="2016-03-03:">Final from Design Team.</t>
+          <t hangText="2016-03-17:">First update incorporating mtgvenue@ietf.org
+            comments</t>
+          <t hangText="2016-05-20">Updated in accordance with editing by Laura
+            Nugent, Dave Crocker, Lou Berger, Fred Baker, and others.</t>
+          <t hangText="posting as working group draft">August 2, 2016</t>
+          <t hangText="Reorganized per Alissa Cooper outline">Work in progress.
+            In addition, contributors were re-organized to be authors.</t>
+          <t hangText="2016-10-28">Editor changeover. Further alignment with
+            guidance by Alissa Cooper, Andrew Sullivan and the mtgvenue working
+            group. Many various changes.</t>
+          <t hangText="2016-11-16">Extensive editorial, format and polishing
+            pass. A few substance changes, including food section.</t>
+          <t hangText="2016-11-30">Additions based on working group meeting and
+            off-list discussions; more editorial and format hacking.</t>
+          <t hangText="2016-12-24">Various clarifying bits to provide some glue
+            between the high-level 'objectives' and the detailed criteria and
+            roles, per suggestions fronm Lear. Editorial changes, per 12/27
+            response to Cooper. Refined uses of 'facility' and 'venue', per 12/4
+            response to Carpenter; also added Carpenter 'lounge' text. Moved
+            community consultation to a separate criterion; removed 'acceptable
+            to the IETF Community from the 2 entries that had it. Removed
+          Post-Seroul Revisions and Text Carried Forward.</t>
+          <t hangText="2016-12-24">
+            Address comments made on list by Stephen Farrell
+            &lt;stephen.farrell@cs.tcd.ie&gt;.  Minor text change in Section
+            5. Replaced links in sections 5.3 and 5.5 with <xref
+            target="checklist"/> and  <xref target="flowchart"/></t>
+	  <t hangText="2017-03-12">
+	    Add openness comment as requested by Stephen Farrell.  Add
+	    statement about 4071 as proposed by Brian and modified by
+	    Jari.  Elaborated on what "unfiltered" means, based on
+	    discussion between Eliot and Stephen.  Preface to Section
+	    5 as discussed between Lou and Stephen.  Slight editorial
+	    tweak to that by Eliot.  IETF operates 
+	    internationally, as proposed by Brian.
+	  </t>
+	  <t hangText="2017-04-18">
+	    Add new introductory text. Sharpen mandatory
+	    definition. Split first criteria into two, and reword them to
+	    be more actionable.  Remove net cash
+	    positive requirement.  Change many critera from Mandatory
+	    to Important.  Remove consensus text.  Modify chapeau.
+	    Add some normative MUSTs in Section 5, and restructure
+	    Section 5.5.  A bunch of other stuff as well.  Use diff.
+	  </t>
+	  <t hangText="2017-05-14">
+	    Happy Mother's Day.  This version removes the tabular
+	    format of requirements, moves mandatory requirements up
+	    front, adds a desiderata section, adds a mandatory
+	    filtering requirement, consolidates introductory text,
+	    moves procedural requirements into Section 5, removes
+	    the definition of Headquarters Hotel, removes the MUST in
+	    late changes, and adds a desire for a local participant in
+	    site selection.	    
+	    </t>
+        </list>
+      </t>
+    </section>
+  </back>
+</rfc>
